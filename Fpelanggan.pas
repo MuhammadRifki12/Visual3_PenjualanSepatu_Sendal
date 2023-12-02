@@ -30,6 +30,7 @@ type
     frxReport1: TfrxReport;
     Zcon: TZConnection;
     ZQ1: TZQuery;
+    Label6: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);

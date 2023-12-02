@@ -15,49 +15,62 @@ object Form3: TForm3
   TextHeight = 13
   object Label1: TLabel
     Left = 16
-    Top = 16
+    Top = 80
     Width = 59
     Height = 13
     Caption = 'ID Transaksi'
   end
   object Label2: TLabel
     Left = 16
-    Top = 48
+    Top = 112
     Width = 48
     Height = 13
     Caption = 'ID Barang'
   end
   object Label3: TLabel
     Left = 16
-    Top = 80
+    Top = 144
     Width = 64
     Height = 13
     Caption = 'ID Pelanggan'
   end
   object Label4: TLabel
     Left = 16
-    Top = 112
+    Top = 176
     Width = 62
     Height = 13
     Caption = 'ID Karyawan'
   end
   object Label5: TLabel
     Left = 16
-    Top = 144
+    Top = 208
     Width = 86
     Height = 13
     Caption = 'Tanggal Transaksi'
   end
   object Label6: TLabel
     Left = 16
-    Top = 176
+    Top = 240
     Width = 56
     Height = 13
     Caption = 'Keterangan'
   end
+  object Label7: TLabel
+    Left = 128
+    Top = 32
+    Width = 191
+    Height = 25
+    Caption = 'FORM TRANSAKSI'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object DateTimePicker1: TDateTimePicker
     Left = 120
-    Top = 144
+    Top = 208
     Width = 186
     Height = 21
     Date = 45258.845804664350000000
@@ -66,14 +79,14 @@ object Form3: TForm3
   end
   object Edit1: TEdit
     Left = 120
-    Top = 16
+    Top = 80
     Width = 185
     Height = 21
     TabOrder = 1
   end
   object c1: TComboBox
     Left = 120
-    Top = 48
+    Top = 112
     Width = 185
     Height = 21
     ItemHeight = 13
@@ -81,7 +94,7 @@ object Form3: TForm3
   end
   object c2: TComboBox
     Left = 120
-    Top = 80
+    Top = 144
     Width = 185
     Height = 21
     ItemHeight = 13
@@ -89,15 +102,15 @@ object Form3: TForm3
   end
   object c3: TComboBox
     Left = 120
-    Top = 112
+    Top = 176
     Width = 185
     Height = 21
     ItemHeight = 13
     TabOrder = 4
   end
   object Button1: TButton
-    Left = 16
-    Top = 216
+    Left = 368
+    Top = 272
     Width = 75
     Height = 25
     Caption = 'Simpan'
@@ -105,8 +118,8 @@ object Form3: TForm3
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 104
-    Top = 216
+    Left = 472
+    Top = 272
     Width = 75
     Height = 25
     Caption = 'Edit'
@@ -114,8 +127,8 @@ object Form3: TForm3
     OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 192
-    Top = 216
+    Left = 576
+    Top = 272
     Width = 75
     Height = 25
     Caption = 'Hapus'
@@ -123,8 +136,8 @@ object Form3: TForm3
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 280
-    Top = 216
+    Left = 680
+    Top = 272
     Width = 75
     Height = 25
     Caption = 'Cetak'
@@ -132,10 +145,10 @@ object Form3: TForm3
     OnClick = Button4Click
   end
   object DBGrid1: TDBGrid
-    Left = 373
-    Top = 8
-    Width = 481
-    Height = 169
+    Left = 357
+    Top = 80
+    Width = 492
+    Height = 177
     DataSource = DS1
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
@@ -146,7 +159,7 @@ object Form3: TForm3
   end
   object Edit2: TEdit
     Left = 120
-    Top = 176
+    Top = 240
     Width = 185
     Height = 21
     TabOrder = 10
@@ -155,34 +168,34 @@ object Form3: TForm3
     SQL.Strings = (
       'select * from transaksi')
     Params = <>
-    Left = 256
-    Top = 264
+    Left = 368
+    Top = 304
   end
   object ZQ2: TZQuery
     SQL.Strings = (
       'select * from barang')
     Params = <>
-    Left = 208
-    Top = 312
+    Left = 368
+    Top = 360
   end
   object ZQ3: TZQuery
     SQL.Strings = (
       'select * from pelanggan')
     Params = <>
-    Left = 208
-    Top = 256
+    Left = 408
+    Top = 304
   end
   object ZQ4: TZQuery
     SQL.Strings = (
       'select * from karyawan')
     Params = <>
-    Left = 256
-    Top = 320
+    Left = 408
+    Top = 360
   end
   object DS1: TDataSource
     DataSet = ZQ1
-    Left = 160
-    Top = 256
+    Left = 496
+    Top = 304
   end
   object frxDBDataset1: TfrxDBDataset
     UserName = 'frxDBDataset1'
@@ -196,8 +209,8 @@ object Form3: TForm3
       'keterangan=keterangan')
     DataSet = ZQ1
     BCDToCurrency = False
-    Left = 160
-    Top = 312
+    Left = 496
+    Top = 360
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
@@ -214,8 +227,8 @@ object Form3: TForm3
       'begin'
       ''
       'end.')
-    Left = 112
-    Top = 312
+    Left = 456
+    Top = 360
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -438,7 +451,7 @@ object Form3: TForm3
     LibraryLocation = 
       'C:\Program Files (x86)\Borland\Delphi7\Projects\Visual3_Penjuala' +
       'nSepatuSendal\libmysql.dll'
-    Left = 112
-    Top = 264
+    Left = 456
+    Top = 304
   end
 end

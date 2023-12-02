@@ -1,7 +1,7 @@
 object Form4: TForm4
   Left = 192
   Top = 125
-  Width = 870
+  Width = 893
   Height = 450
   Caption = 'Fbarang'
   Color = clBtnFace
@@ -15,63 +15,76 @@ object Form4: TForm4
   TextHeight = 13
   object Label1: TLabel
     Left = 16
-    Top = 16
+    Top = 80
     Width = 48
     Height = 13
     Caption = 'ID Barang'
   end
   object Label2: TLabel
     Left = 16
-    Top = 48
+    Top = 112
     Width = 52
     Height = 13
     Caption = 'ID Supplier'
   end
   object Label3: TLabel
     Left = 16
-    Top = 80
+    Top = 144
     Width = 64
     Height = 13
     Caption = 'Nama Barang'
   end
   object Label4: TLabel
     Left = 16
-    Top = 112
+    Top = 176
     Width = 66
     Height = 13
     Caption = 'Harga Barang'
   end
   object Label5: TLabel
     Left = 16
-    Top = 144
+    Top = 208
     Width = 21
     Height = 13
     Caption = 'Stok'
   end
+  object Label6: TLabel
+    Left = 128
+    Top = 32
+    Width = 157
+    Height = 25
+    Caption = 'FORM BARANG'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object Edit1: TEdit
     Left = 112
-    Top = 16
+    Top = 80
     Width = 193
     Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
     Left = 112
-    Top = 80
+    Top = 144
     Width = 193
     Height = 21
     TabOrder = 1
   end
   object Edit3: TEdit
     Left = 112
-    Top = 112
+    Top = 176
     Width = 193
     Height = 21
     TabOrder = 2
   end
   object Cmb1: TComboBox
     Left = 112
-    Top = 48
+    Top = 112
     Width = 193
     Height = 21
     ItemHeight = 13
@@ -79,14 +92,14 @@ object Form4: TForm4
   end
   object Edit4: TEdit
     Left = 112
-    Top = 144
+    Top = 208
     Width = 193
     Height = 21
     TabOrder = 4
   end
   object Button1: TButton
-    Left = 16
-    Top = 184
+    Left = 384
+    Top = 248
     Width = 75
     Height = 25
     Caption = 'Simpan'
@@ -94,8 +107,8 @@ object Form4: TForm4
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 104
-    Top = 184
+    Left = 480
+    Top = 248
     Width = 75
     Height = 25
     Caption = 'Edit'
@@ -103,8 +116,8 @@ object Form4: TForm4
     OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 192
-    Top = 184
+    Left = 672
+    Top = 248
     Width = 75
     Height = 25
     Caption = 'Hapus'
@@ -112,8 +125,8 @@ object Form4: TForm4
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 280
-    Top = 184
+    Left = 576
+    Top = 248
     Width = 75
     Height = 25
     Caption = 'Cetak'
@@ -122,7 +135,7 @@ object Form4: TForm4
   end
   object DBGrid1: TDBGrid
     Left = 373
-    Top = 8
+    Top = 72
     Width = 481
     Height = 169
     DataSource = DS1
@@ -137,20 +150,20 @@ object Form4: TForm4
     SQL.Strings = (
       'select * from barang')
     Params = <>
-    Left = 24
-    Top = 224
+    Left = 384
+    Top = 288
   end
   object DS1: TDataSource
     DataSet = ZQ1
-    Left = 152
-    Top = 224
+    Left = 496
+    Top = 288
   end
   object ZQ2: TZQuery
     SQL.Strings = (
       'select * from supplier')
     Params = <>
-    Left = 24
-    Top = 280
+    Left = 384
+    Top = 344
   end
   object frxDBDataset1: TfrxDBDataset
     UserName = 'frxDBDataset1'
@@ -163,8 +176,8 @@ object Form4: TForm4
       'stok=stok')
     DataSet = ZQ1
     BCDToCurrency = False
-    Left = 152
-    Top = 280
+    Left = 496
+    Top = 344
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
@@ -181,8 +194,8 @@ object Form4: TForm4
       'begin'
       ''
       'end.')
-    Left = 88
-    Top = 280
+    Left = 440
+    Top = 344
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -290,7 +303,7 @@ object Form4: TForm4
     LibraryLocation = 
       'C:\Program Files (x86)\Borland\Delphi7\Projects\Visual3_Penjuala' +
       'nSepatuSendal\libmysql.dll'
-    Left = 88
-    Top = 232
+    Left = 440
+    Top = 288
   end
 end

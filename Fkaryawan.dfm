@@ -2,7 +2,7 @@ object Form6: TForm6
   Left = 192
   Top = 125
   Width = 1007
-  Height = 516
+  Height = 558
   Caption = 'Fkaryawan'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -14,78 +14,91 @@ object Form6: TForm6
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 16
-    Top = 8
+    Left = 8
+    Top = 72
     Width = 62
     Height = 13
     Caption = 'ID Karyawan'
   end
   object Label2: TLabel
-    Left = 16
-    Top = 40
+    Left = 8
+    Top = 104
     Width = 36
     Height = 13
     Caption = 'ID User'
   end
   object Label3: TLabel
-    Left = 16
-    Top = 72
+    Left = 8
+    Top = 136
     Width = 17
     Height = 13
     Caption = 'NIK'
   end
   object Label4: TLabel
-    Left = 16
-    Top = 104
+    Left = 8
+    Top = 168
     Width = 27
     Height = 13
     Caption = 'Nama'
   end
   object Label5: TLabel
-    Left = 16
-    Top = 136
+    Left = 8
+    Top = 200
     Width = 63
     Height = 13
     Caption = 'Jenis Kelamin'
   end
   object Label6: TLabel
-    Left = 16
-    Top = 168
+    Left = 8
+    Top = 232
     Width = 64
     Height = 13
     Caption = 'Tanggal Lahir'
   end
   object Label7: TLabel
-    Left = 16
-    Top = 200
+    Left = 8
+    Top = 264
     Width = 62
     Height = 13
     Caption = 'Tempat Lahir'
   end
   object Label8: TLabel
-    Left = 16
-    Top = 232
+    Left = 8
+    Top = 296
     Width = 33
     Height = 13
     Caption = 'Alamat'
   end
   object Label9: TLabel
-    Left = 16
-    Top = 264
+    Left = 8
+    Top = 328
     Width = 20
     Height = 13
     Caption = 'Telp'
   end
   object Label10: TLabel
-    Left = 16
-    Top = 296
+    Left = 8
+    Top = 360
     Width = 31
     Height = 13
     Caption = 'Status'
   end
+  object Label11: TLabel
+    Left = 128
+    Top = 16
+    Width = 192
+    Height = 25
+    Caption = 'FORM KARYAWAN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object DateTimePicker1: TDateTimePicker
-    Left = 112
-    Top = 168
+    Left = 104
+    Top = 232
     Width = 193
     Height = 21
     Date = 45258.694700960640000000
@@ -93,58 +106,58 @@ object Form6: TForm6
     TabOrder = 0
   end
   object Edit1: TEdit
-    Left = 112
-    Top = 8
+    Left = 104
+    Top = 72
     Width = 193
     Height = 21
     TabOrder = 1
   end
   object Edit2: TEdit
-    Left = 112
-    Top = 72
+    Left = 104
+    Top = 136
     Width = 193
     Height = 21
     TabOrder = 2
   end
   object Edit3: TEdit
-    Left = 112
-    Top = 104
+    Left = 104
+    Top = 168
     Width = 193
     Height = 21
     TabOrder = 3
   end
   object Edit4: TEdit
-    Left = 112
-    Top = 200
+    Left = 104
+    Top = 264
     Width = 193
     Height = 21
     TabOrder = 4
   end
   object Edit5: TEdit
-    Left = 112
-    Top = 232
+    Left = 104
+    Top = 296
     Width = 193
     Height = 21
     TabOrder = 5
   end
   object Edit6: TEdit
-    Left = 112
-    Top = 264
+    Left = 104
+    Top = 328
     Width = 193
     Height = 21
     TabOrder = 6
   end
   object Cmb1: TComboBox
-    Left = 112
-    Top = 40
+    Left = 104
+    Top = 104
     Width = 193
     Height = 21
     ItemHeight = 13
     TabOrder = 7
   end
   object Cmb2: TComboBox
-    Left = 112
-    Top = 136
+    Left = 104
+    Top = 200
     Width = 193
     Height = 21
     ItemHeight = 13
@@ -154,8 +167,8 @@ object Form6: TForm6
       'P')
   end
   object Cmb3: TComboBox
-    Left = 112
-    Top = 296
+    Left = 104
+    Top = 360
     Width = 193
     Height = 21
     ItemHeight = 13
@@ -165,8 +178,8 @@ object Form6: TForm6
       'Inaktif')
   end
   object Button1: TButton
-    Left = 16
-    Top = 328
+    Left = 520
+    Top = 400
     Width = 75
     Height = 25
     Caption = 'Simpan'
@@ -174,8 +187,8 @@ object Form6: TForm6
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 104
-    Top = 328
+    Left = 608
+    Top = 400
     Width = 75
     Height = 25
     Caption = 'Edit'
@@ -183,8 +196,8 @@ object Form6: TForm6
     OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 192
-    Top = 328
+    Left = 696
+    Top = 400
     Width = 75
     Height = 25
     Caption = 'Hapus'
@@ -192,8 +205,8 @@ object Form6: TForm6
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 280
-    Top = 328
+    Left = 784
+    Top = 400
     Width = 75
     Height = 25
     Caption = 'Cetak'
@@ -201,8 +214,8 @@ object Form6: TForm6
     OnClick = Button4Click
   end
   object DBGrid1: TDBGrid
-    Left = 333
-    Top = 8
+    Left = 325
+    Top = 72
     Width = 625
     Height = 313
     DataSource = DS1
@@ -217,20 +230,20 @@ object Form6: TForm6
     SQL.Strings = (
       'select * from karyawan')
     Params = <>
-    Left = 24
-    Top = 368
+    Left = 328
+    Top = 400
   end
   object DS1: TDataSource
     DataSet = ZQ1
-    Left = 152
-    Top = 368
+    Left = 408
+    Top = 400
   end
   object ZQ2: TZQuery
     SQL.Strings = (
       'select * from user')
     Params = <>
-    Left = 24
-    Top = 424
+    Left = 328
+    Top = 448
   end
   object frxDBDataset1: TfrxDBDataset
     UserName = 'frxDBDataset1'
@@ -248,8 +261,8 @@ object Form6: TForm6
       'status=status')
     DataSet = ZQ1
     BCDToCurrency = False
-    Left = 152
-    Top = 424
+    Left = 440
+    Top = 456
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
@@ -266,8 +279,8 @@ object Form6: TForm6
       'begin'
       ''
       'end.')
-    Left = 88
-    Top = 424
+    Left = 368
+    Top = 456
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -490,7 +503,7 @@ object Form6: TForm6
     LibraryLocation = 
       'C:\Program Files (x86)\Borland\Delphi7\Projects\Visual3_Penjuala' +
       'nSepatuSendal\libmysql.dll'
-    Left = 88
-    Top = 376
+    Left = 368
+    Top = 400
   end
 end

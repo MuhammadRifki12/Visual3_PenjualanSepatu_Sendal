@@ -7,136 +7,227 @@ object Form7: TForm7
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -21
   Font.Name = 'Tahoma'
-  Font.Style = []
+  Font.Style = [fsBold]
   OldCreateOrder = False
   PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 25
   object Label1: TLabel
     Left = 16
-    Top = 24
-    Width = 52
-    Height = 13
+    Top = 96
+    Width = 63
+    Height = 16
     Caption = 'ID Supplier'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
   end
   object Label2: TLabel
     Left = 16
-    Top = 56
-    Width = 68
-    Height = 13
+    Top = 128
+    Width = 84
+    Height = 16
     Caption = 'Nama Supplier'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
   end
   object Label3: TLabel
     Left = 16
-    Top = 88
-    Width = 33
-    Height = 13
+    Top = 160
+    Width = 40
+    Height = 16
     Caption = 'Alamat'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
   end
   object Label4: TLabel
     Left = 16
-    Top = 120
-    Width = 32
-    Height = 13
+    Top = 192
+    Width = 39
+    Height = 16
     Caption = 'Telpon'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 144
+    Top = 40
+    Width = 175
+    Height = 25
+    Caption = 'FORM SUPPLIER'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object id: TEdit
     Left = 120
-    Top = 24
+    Top = 96
     Width = 121
-    Height = 21
+    Height = 27
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 0
   end
   object nama: TEdit
     Left = 120
-    Top = 56
+    Top = 128
     Width = 121
-    Height = 21
+    Height = 27
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 1
   end
   object alamat: TEdit
     Left = 120
-    Top = 88
+    Top = 160
     Width = 121
-    Height = 21
+    Height = 27
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 2
   end
   object telp: TEdit
     Left = 120
-    Top = 120
+    Top = 192
     Width = 121
-    Height = 21
+    Height = 27
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 3
   end
   object Button1: TButton
-    Left = 16
-    Top = 160
+    Left = 360
+    Top = 264
     Width = 75
     Height = 25
     Caption = 'Simpan'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 4
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 104
-    Top = 160
+    Left = 448
+    Top = 264
     Width = 75
     Height = 25
     Caption = 'Edit'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 5
     OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 192
-    Top = 160
+    Left = 544
+    Top = 264
     Width = 75
     Height = 25
     Caption = 'Hapus'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 6
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 280
-    Top = 160
+    Left = 648
+    Top = 264
     Width = 75
     Height = 25
     Caption = 'Cetak'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 7
     OnClick = Button4Click
   end
   object DBGrid1: TDBGrid
-    Left = 357
-    Top = 16
+    Left = 269
+    Top = 88
     Width = 537
     Height = 169
     DataSource = DS1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 8
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
-    TitleFont.Height = -11
+    TitleFont.Height = -21
     TitleFont.Name = 'Tahoma'
-    TitleFont.Style = []
+    TitleFont.Style = [fsBold]
   end
   object ZQ: TZQuery
     SQL.Strings = (
       'select * from supplier')
     Params = <>
-    Left = 72
-    Top = 200
+    Left = 504
+    Top = 296
   end
   object DS1: TDataSource
     DataSet = ZQ
-    Left = 120
-    Top = 200
+    Left = 304
+    Top = 296
   end
   object frxDBDataset1: TfrxDBDataset
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     DataSet = ZQ
     BCDToCurrency = False
-    Left = 24
-    Top = 248
+    Left = 568
+    Top = 296
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
@@ -153,8 +244,8 @@ object Form7: TForm7
       'begin'
       ''
       'end.')
-    Left = 120
-    Top = 248
+    Left = 440
+    Top = 296
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -366,7 +457,7 @@ object Form7: TForm7
     LibraryLocation = 
       'C:\Program Files (x86)\Borland\Delphi7\Projects\Visual3_Penjuala' +
       'nSepatuSendal\libmysql.dll'
-    Left = 224
-    Top = 232
+    Left = 368
+    Top = 296
   end
 end

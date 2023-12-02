@@ -15,49 +15,62 @@ object Form5: TForm5
   TextHeight = 13
   object Label1: TLabel
     Left = 16
-    Top = 16
+    Top = 88
     Width = 36
     Height = 13
     Caption = 'ID User'
   end
   object Label2: TLabel
     Left = 16
-    Top = 48
+    Top = 120
     Width = 48
     Height = 13
     Caption = 'Username'
   end
   object Label3: TLabel
     Left = 16
-    Top = 80
+    Top = 152
     Width = 46
     Height = 13
     Caption = 'Password'
   end
+  object Label4: TLabel
+    Left = 144
+    Top = 32
+    Width = 125
+    Height = 25
+    Caption = 'FORM USER'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object Edit1: TEdit
     Left = 112
-    Top = 16
+    Top = 88
     Width = 121
     Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
     Left = 112
-    Top = 48
+    Top = 120
     Width = 121
     Height = 21
     TabOrder = 1
   end
   object Edit3: TEdit
     Left = 112
-    Top = 80
+    Top = 152
     Width = 121
     Height = 21
     TabOrder = 2
   end
   object Button1: TButton
-    Left = 8
-    Top = 112
+    Left = 320
+    Top = 232
     Width = 75
     Height = 25
     Caption = 'Simpan'
@@ -65,8 +78,8 @@ object Form5: TForm5
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 96
-    Top = 112
+    Left = 408
+    Top = 232
     Width = 75
     Height = 25
     Caption = 'Edit'
@@ -74,8 +87,8 @@ object Form5: TForm5
     OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 184
-    Top = 112
+    Left = 584
+    Top = 232
     Width = 75
     Height = 25
     Caption = 'Hapus'
@@ -83,8 +96,8 @@ object Form5: TForm5
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 8
-    Top = 152
+    Left = 496
+    Top = 232
     Width = 75
     Height = 25
     Caption = 'Cetak'
@@ -93,7 +106,7 @@ object Form5: TForm5
   end
   object DBGrid1: TDBGrid
     Left = 317
-    Top = 8
+    Top = 80
     Width = 537
     Height = 137
     DataSource = DS1
@@ -108,21 +121,21 @@ object Form5: TForm5
     SQL.Strings = (
       'select * from user')
     Params = <>
-    Left = 240
-    Top = 160
+    Left = 504
+    Top = 280
   end
   object DS1: TDataSource
     DataSet = ZQ
-    Left = 256
-    Top = 16
+    Left = 424
+    Top = 280
   end
   object frxDBDataset1: TfrxDBDataset
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     DataSet = ZQ
     BCDToCurrency = False
-    Left = 256
-    Top = 64
+    Left = 376
+    Top = 280
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
@@ -139,8 +152,8 @@ object Form5: TForm5
       'begin'
       ''
       'end.')
-    Left = 288
-    Top = 160
+    Left = 320
+    Top = 280
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -316,7 +329,7 @@ object Form5: TForm5
     LibraryLocation = 
       'C:\Program Files (x86)\Borland\Delphi7\Projects\Visual3_Penjuala' +
       'nSepatuSendal\libmysql.dll'
-    Left = 192
-    Top = 160
+    Left = 464
+    Top = 280
   end
 end

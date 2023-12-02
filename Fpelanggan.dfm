@@ -14,71 +14,84 @@ object Form2: TForm2
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 40
-    Top = 24
+    Left = 32
+    Top = 88
     Width = 64
     Height = 13
     Caption = 'ID Pelanggan'
   end
   object Label2: TLabel
-    Left = 40
-    Top = 56
+    Left = 32
+    Top = 120
     Width = 80
     Height = 13
     Caption = 'Nama Pelanggan'
   end
   object Label3: TLabel
-    Left = 40
-    Top = 88
+    Left = 32
+    Top = 152
     Width = 63
     Height = 13
     Caption = 'Jenis Kelamin'
   end
   object Label4: TLabel
-    Left = 40
-    Top = 120
+    Left = 32
+    Top = 184
     Width = 36
     Height = 13
     Caption = 'No Telp'
   end
   object Label5: TLabel
-    Left = 40
-    Top = 152
+    Left = 32
+    Top = 216
     Width = 33
     Height = 13
     Caption = 'Alamat'
   end
+  object Label6: TLabel
+    Left = 112
+    Top = 32
+    Width = 199
+    Height = 25
+    Caption = 'FORM PELANGGAN'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object Edit1: TEdit
-    Left = 176
-    Top = 24
+    Left = 168
+    Top = 88
     Width = 121
     Height = 21
     TabOrder = 0
   end
   object Edit2: TEdit
-    Left = 176
-    Top = 56
+    Left = 168
+    Top = 120
     Width = 121
     Height = 21
     TabOrder = 1
   end
   object Edit3: TEdit
-    Left = 176
-    Top = 120
+    Left = 168
+    Top = 184
     Width = 121
     Height = 21
     TabOrder = 2
   end
   object Edit4: TEdit
-    Left = 176
-    Top = 152
+    Left = 168
+    Top = 216
     Width = 121
     Height = 21
     TabOrder = 3
   end
   object Cmb1: TComboBox
-    Left = 176
-    Top = 88
+    Left = 168
+    Top = 152
     Width = 121
     Height = 21
     ItemHeight = 13
@@ -88,8 +101,8 @@ object Form2: TForm2
       'P')
   end
   object Button1: TButton
-    Left = 32
-    Top = 184
+    Left = 456
+    Top = 264
     Width = 75
     Height = 25
     Caption = 'Simpan'
@@ -97,8 +110,8 @@ object Form2: TForm2
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 120
-    Top = 184
+    Left = 560
+    Top = 264
     Width = 75
     Height = 25
     Caption = 'Edit'
@@ -106,8 +119,8 @@ object Form2: TForm2
     OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 208
-    Top = 184
+    Left = 648
+    Top = 264
     Width = 75
     Height = 25
     Caption = 'Hapus'
@@ -115,8 +128,8 @@ object Form2: TForm2
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 296
-    Top = 184
+    Left = 744
+    Top = 264
     Width = 75
     Height = 25
     Caption = 'Cetak'
@@ -124,10 +137,10 @@ object Form2: TForm2
     OnClick = Button4Click
   end
   object DBGrid1: TDBGrid
-    Left = 397
-    Top = 8
-    Width = 489
-    Height = 200
+    Left = 333
+    Top = 72
+    Width = 452
+    Height = 161
     DataSource = DS1
     TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
@@ -137,15 +150,15 @@ object Form2: TForm2
     TitleFont.Style = []
   end
   object DS1: TDataSource
-    Left = 224
-    Top = 232
+    Left = 336
+    Top = 264
   end
   object frxDBDataset1: TfrxDBDataset
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     BCDToCurrency = False
-    Left = 80
-    Top = 232
+    Left = 336
+    Top = 320
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
@@ -162,8 +175,8 @@ object Form2: TForm2
       'begin'
       ''
       'end.')
-    Left = 152
-    Top = 232
+    Left = 408
+    Top = 320
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -411,15 +424,15 @@ object Form2: TForm2
     LibraryLocation = 
       'C:\Program Files (x86)\Borland\Delphi7\Projects\Visual3_Penjuala' +
       'nSepatuSendal\libmysql.dll'
-    Left = 80
-    Top = 304
+    Left = 408
+    Top = 264
   end
   object ZQ1: TZQuery
     Connection = Zcon
     SQL.Strings = (
       'select * from pelanggan')
     Params = <>
-    Left = 168
-    Top = 304
+    Left = 480
+    Top = 320
   end
 end
