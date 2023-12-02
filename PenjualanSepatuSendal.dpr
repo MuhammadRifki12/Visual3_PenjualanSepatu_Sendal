@@ -7,7 +7,8 @@ uses
   Ftransaksi in 'Ftransaksi.pas' {Form3},
   Fbarang in 'Fbarang.pas' {Form4},
   Fuser in 'Fuser.pas' {Form5},
-  Fkaryawan in 'Fkaryawan.pas' {Form6};
+  Fkaryawan in 'Fkaryawan.pas' {Form6},
+  Fsupplier in 'Fsupplier.pas' {Form7};
 
 {$R *.res}
 
@@ -19,5 +20,6 @@ begin
   Application.CreateForm(TForm4, Form4);
   Application.CreateForm(TForm5, Form5);
   Application.CreateForm(TForm6, Form6);
+  Application.CreateForm(TForm7, Form7);
   Application.Run;
 end.
